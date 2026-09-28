@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subhadip Ghosh | Visiting Card</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f3f4f6;
+      }
+
+      .card {
+        width: 360px;
+        min-height: 220px;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+        padding: 28px 22px;
+        position: relative;
+        border-radius: 12px;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, #111827, #2563eb);
+        border-radius: 12px 12px 0 0;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #111827;
+      }
+
+      .role {
+        margin-top: 8px;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #4b5563;
+      }
+
+      .divider {
+        width: 100%;
+        height: 1px;
+        background: #e5e7eb;
+        margin: 18px 0 14px;
+      }
+
+      .info {
+        display: grid;
+        gap: 10px;
+        font-size: 13px;
+        color: #374151;
+      }
+
+      .info div {
+        line-height: 1.5;
+      }
+
+      .label {
+        font-weight: 700;
+        color: #111827;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>SUBHADIP GHOSH</h1>
+      <div class="role">Business Consultant</div>
+
+      <div class="divider"></div>
+
+      <div class="info">
+        <div><span class="label">Phone:</span> +91 90000 00000</div>
+        <div><span class="label">Email:</span> subhadipghosh@email.com</div>
+        <div><span class="label">Website:</span> www.subhadipghosh.com</div>
+        <div><span class="label">Address:</span> Your City, India</div>
+      </div>
+    </div>
+  </body>
+</html>
